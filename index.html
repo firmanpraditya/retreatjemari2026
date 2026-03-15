@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registrasi Retreat Jemari 2026 — GKJW Mulyosari</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --sky:     #E8F4FD;
+    --navy:    #1A3A5C;
+    --teal:    #2A8B8B;
+    --teal2:   #1F6B6B;
+    --gold:    #C8922B;
+    --gold2:   #F0B840;
+    --white:   #FFFFFF;
+    --soft:    #F7FBFF;
+    --text:    #1C2E3E;
+    --muted:   #6B8CA8;
+    --border:  #C2DCF0;
+    --success: #2D9E6B;
+    --error:   #D94F3B;
+    --radius:  16px;
+    --shadow:  0 8px 40px rgba(26,58,92,0.10);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Nunito', sans-serif;
+    background: var(--sky);
+    min-height: 100vh;
+    color: var(--text);
+    overflow-x: hidden;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    top: -120px; right: -120px;
+    width: 480px; height: 480px;
+    background: radial-gradient(circle, rgba(42,139,139,0.13) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none; z-index: 0;
+  }
+  body::after {
+    content: '';
+    position: fixed;
+    bottom: -100px; left: -100px;
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(200,146,43,0.10) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none; z-index: 0;
+  }
+
+  .page-wrap {
+    position: relative; z-index: 1;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 32px 16px 60px;
+  }
+
+  /* ── Hero ── */
+  .hero {
+    background: linear-gradient(145deg, var(--navy) 0%, #1F5080 60%, var(--teal) 100%);
+    border-radius: 24px;
+    padding: 40px 32px 36px;
+    text-align: center;
+    position: relative; overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 16px 60px rgba(26,58,92,0.25);
+    animation: fadeDown 0.7s ease both;
+  }
+  .hero::before {
+    content: ''; position: absolute;
+    top: -60px; right: -60px;
+    width: 220px; height: 220px;
+    border: 2px solid rgba(255,255,255,0.08); border-radius: 50%;
+  }
+  .hero::after {
+    content: ''; position: absolute;
+    bottom: -80px; left: -40px;
+    width: 280px; height: 280px;
+    border: 2px solid rgba(240,184,64,0.15); border-radius: 50%;
+  }
+  .logo-ring {
+    width: 80px; height: 80px;
+    margin: 0 auto 18px;
+    background: rgba(255,255,255,0.12);
+    border: 2px solid rgba(255,255,255,0.25);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 36px;
+    position: relative; z-index: 1;
+    animation: popIn 0.6s 0.3s cubic-bezier(0.34,1.56,0.64,1) both;
+  }
+  .hero-label {
+    display: inline-block;
+    background: rgba(240,184,64,0.20);
+    border: 1px solid rgba(240,184,64,0.40);
+    color: var(--gold2);
+    font-size: 11px; font-weight: 700;
+    letter-spacing: 2.5px; text-transform: uppercase;
+    padding: 5px 14px; border-radius: 30px;
+    margin-bottom: 12px;
+    position: relative; z-index: 1;
+    animation: fadeUp 0.5s 0.4s ease both;
+  }
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(28px, 6vw, 42px); font-weight: 900;
+    color: #fff; line-height: 1.1; margin-bottom: 10px;
+    position: relative; z-index: 1;
+    animation: fadeUp 0.5s 0.5s ease both;
+  }
+  .hero h1 span { color: var(--gold2); }
+  .hero-sub {
+    font-size: clamp(13px, 3vw, 16px);
+    color: rgba(255,255,255,0.80);
+    font-style: italic; font-weight: 500; margin-bottom: 22px;
+    position: relative; z-index: 1;
+    animation: fadeUp 0.5s 0.6s ease both;
+  }
+  .hero-badges {
+    display: flex; flex-wrap: wrap; gap: 8px; justify-content: center;
+    position: relative; z-index: 1;
+    animation: fadeUp 0.5s 0.7s ease both;
+  }
+  .badge {
+    background: rgba(255,255,255,0.10);
+    border: 1px solid rgba(255,255,255,0.20);
+    color: rgba(255,255,255,0.90);
+    font-size: 12px; font-weight: 600;
+    padding: 6px 14px; border-radius: 30px;
+    display: flex; align-items: center; gap: 6px;
+  }
+
+  /* ── Card ── */
+  .card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 28px;
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(194,220,240,0.5);
+    margin-bottom: 16px;
+    animation: fadeUp 0.6s 0.5s ease both;
+  }
+
+  .card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 17px; color: var(--navy);
+    margin-bottom: 4px;
+  }
+  .card-desc {
+    font-size: 13px; color: var(--muted);
+    margin-bottom: 20px; line-height: 1.6;
+  }
+
+  /* ── Section divider ── */
+  .section-label {
+    display: flex; align-items: center; gap: 10px;
+    margin-bottom: 16px;
+  }
+  .section-label span {
+    font-size: 11px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 1.2px; color: var(--muted); white-space: nowrap;
+  }
+  .section-label::after {
+    content: ''; flex: 1; height: 1px; background: var(--border);
+  }
+
+  /* ── Fields ── */
+  .field-group { margin-bottom: 18px; }
+
+  label.field-label {
+    display: block; font-size: 13px; font-weight: 700;
+    color: var(--navy); margin-bottom: 7px; letter-spacing: 0.3px;
+  }
+  label.field-label .req { color: var(--gold); margin-left: 3px; }
+
+  input[type="text"],
+  input[type="number"],
+  select {
+    width: 100%; padding: 12px 16px;
+    border: 2px solid var(--border); border-radius: 10px;
+    font-family: 'Nunito', sans-serif; font-size: 15px; color: var(--text);
+    background: var(--soft);
+    transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+    outline: none; appearance: none; -webkit-appearance: none;
+  }
+  input[type="text"]:focus,
+  input[type="number"]:focus,
+  select:focus {
+    border-color: var(--teal); background: #fff;
+    box-shadow: 0 0 0 4px rgba(42,139,139,0.10);
+  }
+  input[type="text"]::placeholder { color: #B0C8DC; }
+
+  .select-wrap { position: relative; }
+  .select-wrap::after {
+    content: '▾'; position: absolute;
+    right: 14px; top: 50%; transform: translateY(-50%);
+    color: var(--teal); font-size: 16px; pointer-events: none;
+  }
+
+  /* ── Radio ── */
+  .radio-group { display: flex; gap: 10px; flex-wrap: wrap; }
+  .radio-btn { flex: 1; min-width: 90px; }
+  .radio-btn input[type="radio"] { display: none; }
+  .radio-btn label {
+    display: flex; align-items: center; justify-content: center; gap: 6px;
+    padding: 11px 10px;
+    border: 2px solid var(--border); border-radius: 10px;
+    background: var(--soft); cursor: pointer;
+    font-size: 14px; font-weight: 600; color: var(--muted);
+    transition: all 0.2s; text-align: center; margin-bottom: 0;
+  }
+  .radio-btn input[type="radio"]:checked + label {
+    border-color: var(--teal);
+    background: rgba(42,139,139,0.08); color: var(--teal2);
+  }
+  .radio-btn label:hover { border-color: var(--teal); color: var(--teal2); }
+
+  /* ── Checkbox ── */
+  .checkbox-card {
+    display: flex; align-items: flex-start; gap: 12px;
+    padding: 13px 16px;
+    border: 2px solid var(--border); border-radius: 10px;
+    background: var(--soft); cursor: pointer; transition: all 0.2s;
+  }
+  .checkbox-card:hover { border-color: var(--teal); background: rgba(42,139,139,0.04); }
+  .checkbox-card.checked { border-color: var(--teal); background: rgba(42,139,139,0.07); }
+  .checkbox-card input[type="checkbox"] {
+    width: 18px; height: 18px; accent-color: var(--teal);
+    cursor: pointer; flex-shrink: 0; margin-top: 2px;
+  }
+  .cb-main { font-size: 13.5px; font-weight: 700; color: var(--navy); margin-bottom: 2px; }
+  .cb-sub  { font-size: 12px; color: var(--muted); font-weight: 500; line-height: 1.5; }
+
+  /* ── Field error ── */
+  .field-error {
+    font-size: 12px; color: var(--error);
+    margin-top: 5px; display: none; font-weight: 600;
+  }
+  input.invalid, select.invalid {
+    border-color: var(--error) !important;
+    box-shadow: 0 0 0 3px rgba(217,79,59,0.10) !important;
+  }
+
+  /* ── Peserta block ── */
+  .peserta-block {
+    border: 2px solid var(--border);
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 14px;
+    background: var(--soft);
+    transition: border-color 0.2s;
+    animation: slideIn 0.3s ease both;
+  }
+  .peserta-block:first-child { border-color: rgba(42,139,139,0.35); }
+
+  .peserta-header {
+    display: flex; align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+  .peserta-number {
+    display: flex; align-items: center; gap: 9px;
+  }
+  .peserta-num-badge {
+    width: 28px; height: 28px;
+    background: linear-gradient(135deg, var(--teal), var(--teal2));
+    color: white; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 13px; font-weight: 700; flex-shrink: 0;
+  }
+  .peserta-num-label {
+    font-size: 13px; font-weight: 700; color: var(--navy);
+  }
+
+  .btn-remove {
+    background: none; border: 1.5px solid #FFCDD2;
+    border-radius: 8px; padding: 5px 10px;
+    color: var(--error); font-size: 12px; font-weight: 700;
+    cursor: pointer; transition: all 0.2s;
+    display: flex; align-items: center; gap: 4px;
+  }
+  .btn-remove:hover {
+    background: #FFEBEE; border-color: var(--error);
+  }
+
+  /* 2-col grid for gender + usia */
+  .field-row {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+  }
+
+  /* ── Add peserta button ── */
+  .btn-add {
+    width: 100%; padding: 13px;
+    background: transparent;
+    border: 2px dashed var(--teal);
+    border-radius: 12px; color: var(--teal);
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px; font-weight: 700;
+    cursor: pointer; transition: all 0.2s;
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+    margin-bottom: 20px;
+  }
+  .btn-add:hover {
+    background: rgba(42,139,139,0.06);
+    border-color: var(--teal2);
+  }
+
+  /* ── Divider ── */
+  .divider {
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--border), transparent);
+    margin: 20px 0;
+  }
+
+  /* ── Submit counter badge ── */
+  .submit-area { margin-top: 4px; }
+  .peserta-count-info {
+    text-align: center; font-size: 13px; color: var(--muted);
+    margin-bottom: 14px; font-weight: 600;
+  }
+  .peserta-count-info strong { color: var(--teal); font-size: 15px; }
+
+  /* ── Buttons ── */
+  .btn-submit {
+    width: 100%; padding: 16px;
+    background: linear-gradient(135deg, var(--teal) 0%, var(--teal2) 100%);
+    color: white; border: none; border-radius: 12px;
+    font-family: 'Nunito', sans-serif; font-size: 16px; font-weight: 700;
+    cursor: pointer; transition: all 0.25s;
+    box-shadow: 0 6px 24px rgba(42,139,139,0.30);
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+  }
+  .btn-submit:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(42,139,139,0.40);
+  }
+  .btn-submit:disabled { opacity: 0.7; cursor: not-allowed; }
+
+  .btn-reset {
+    width: 100%; padding: 12px; margin-top: 10px;
+    background: transparent; color: var(--muted);
+    border: 2px solid var(--border); border-radius: 12px;
+    font-family: 'Nunito', sans-serif; font-size: 14px; font-weight: 600;
+    cursor: pointer; transition: all 0.2s;
+  }
+  .btn-reset:hover { border-color: var(--muted); color: var(--navy); }
+
+  /* ── Spinner ── */
+  .spinner {
+    width: 18px; height: 18px;
+    border: 2.5px solid rgba(255,255,255,0.4);
+    border-top-color: white; border-radius: 50%;
+    animation: spin 0.7s linear infinite; display: none;
+  }
+
+  /* ── Toast ── */
+  .toast {
+    position: fixed; top: 20px; left: 50%;
+    transform: translateX(-50%) translateY(-80px);
+    background: var(--white); border-radius: 14px;
+    padding: 14px 22px; box-shadow: 0 12px 40px rgba(26,58,92,0.18);
+    display: flex; align-items: center; gap: 10px;
+    font-size: 14px; font-weight: 600;
+    transition: transform 0.4s cubic-bezier(0.34,1.56,0.64,1);
+    z-index: 999; border: 1.5px solid transparent; max-width: 90vw;
+  }
+  .toast.show { transform: translateX(-50%) translateY(0); }
+  .toast.success { border-color: var(--success); color: var(--success); }
+  .toast.error   { border-color: var(--error);   color: var(--error);   }
+
+  /* ── Success screen ── */
+  .success-screen {
+    display: none; text-align: center; padding: 40px 20px;
+    animation: fadeUp 0.5s ease both;
+  }
+  .success-icon {
+    width: 80px; height: 80px;
+    background: linear-gradient(135deg, var(--teal), var(--teal2));
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 36px; margin: 0 auto 20px;
+    box-shadow: 0 8px 24px rgba(42,139,139,0.30);
+    animation: popIn 0.6s cubic-bezier(0.34,1.56,0.64,1) both;
+  }
+  .success-screen h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px; color: var(--navy); margin-bottom: 10px;
+  }
+  .success-screen p {
+    font-size: 14px; color: var(--muted); line-height: 1.7;
+    max-width: 340px; margin: 0 auto 10px;
+  }
+  .success-names {
+    background: var(--soft); border: 1px solid var(--border);
+    border-radius: 10px; padding: 14px 18px;
+    margin: 16px auto; max-width: 340px; text-align: left;
+  }
+  .success-names .sn-title {
+    font-size: 11px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 1px; color: var(--muted); margin-bottom: 8px;
+  }
+  .success-names .sn-item {
+    font-size: 13.5px; font-weight: 600; color: var(--navy);
+    padding: 3px 0; display: flex; align-items: center; gap: 7px;
+  }
+  .sn-dot {
+    width: 7px; height: 7px; border-radius: 50%;
+    background: var(--teal); flex-shrink: 0;
+  }
+  .btn-daftar-lagi {
+    display: inline-block; padding: 12px 28px;
+    background: var(--navy); color: white; border: none;
+    border-radius: 10px; font-family: 'Nunito', sans-serif;
+    font-size: 14px; font-weight: 700; cursor: pointer;
+    transition: all 0.2s; margin-top: 16px;
+  }
+  .btn-daftar-lagi:hover { background: var(--teal2); }
+
+  /* ── CP compact ── */
+  .cp-card {
+    margin-top: 12px; padding: 10px 14px;
+    background: var(--white); border-radius: 10px;
+    border: 1px solid var(--border);
+    animation: fadeUp 0.6s 0.7s ease both;
+  }
+  .cp-title {
+    font-size: 11px; font-weight: 700; color: var(--muted);
+    text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 7px;
+  }
+  .cp-list { display: flex; flex-wrap: wrap; gap: 6px; }
+  .cp-item {
+    display: inline-flex; align-items: center; gap: 5px;
+    background: var(--soft); border: 1px solid var(--border);
+    border-radius: 20px; padding: 4px 10px 4px 5px;
+    font-size: 12px; white-space: nowrap;
+  }
+  .cp-badge {
+    background: var(--teal); color: white;
+    font-size: 10px; font-weight: 700;
+    padding: 2px 7px; border-radius: 20px;
+  }
+  .cp-name { color: var(--navy); font-weight: 600; }
+  .cp-phone { color: var(--teal); text-decoration: none; font-weight: 700; }
+  .cp-phone:hover { text-decoration: underline; }
+
+  /* ── Footer ── */
+  .footer-note {
+    text-align: center; font-size: 12px; color: var(--muted);
+    margin-top: 16px; line-height: 1.7;
+  }
+
+  /* ── Confirmation Modal ── */
+  .modal-overlay {
+    position: fixed; inset: 0;
+    background: rgba(26,58,92,0.45);
+    backdrop-filter: blur(3px);
+    z-index: 1000;
+    display: flex; align-items: center; justify-content: center;
+    padding: 20px;
+    opacity: 0; pointer-events: none;
+    transition: opacity 0.25s ease;
+  }
+  .modal-overlay.show {
+    opacity: 1; pointer-events: all;
+  }
+  .modal-box {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 32px 28px;
+    max-width: 360px; width: 100%;
+    box-shadow: 0 24px 60px rgba(26,58,92,0.20);
+    transform: scale(0.92) translateY(12px);
+    transition: transform 0.3s cubic-bezier(0.34,1.56,0.64,1);
+    text-align: center;
+  }
+  .modal-overlay.show .modal-box {
+    transform: scale(1) translateY(0);
+  }
+  .modal-icon {
+    font-size: 42px; margin-bottom: 14px; line-height: 1;
+  }
+  .modal-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px; color: var(--navy);
+    margin-bottom: 8px;
+  }
+  .modal-desc {
+    font-size: 13.5px; color: var(--muted);
+    line-height: 1.6; margin-bottom: 18px;
+  }
+  .modal-desc strong { color: var(--teal); font-size: 22px; }
+  .modal-names {
+    background: var(--soft); border: 1px solid var(--border);
+    border-radius: 10px; padding: 12px 14px;
+    margin-bottom: 20px; text-align: left;
+    max-height: 160px; overflow-y: auto;
+  }
+  .modal-name-item {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 13px; font-weight: 600; color: var(--navy);
+    padding: 3px 0;
+  }
+  .modal-name-item .mn-dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--teal); flex-shrink: 0;
+  }
+  .modal-name-item .mn-gen {
+    color: var(--muted); font-weight: 500; font-size: 11.5px;
+  }
+  .modal-actions {
+    display: flex; gap: 10px;
+  }
+  .btn-modal-cancel {
+    flex: 1; padding: 12px;
+    background: transparent; border: 2px solid var(--border);
+    border-radius: 10px; color: var(--muted);
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px; font-weight: 700; cursor: pointer;
+    transition: all 0.2s;
+  }
+  .btn-modal-cancel:hover { border-color: var(--muted); color: var(--navy); }
+  .btn-modal-ok {
+    flex: 2; padding: 12px;
+    background: linear-gradient(135deg, var(--teal), var(--teal2));
+    border: none; border-radius: 10px; color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px; font-weight: 700; cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 4px 14px rgba(42,139,139,0.30);
+  }
+  .btn-modal-ok:hover { transform: translateY(-1px); box-shadow: 0 6px 18px rgba(42,139,139,0.40); }
+
+  /* ── Animations ── */
+  @keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-24px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes popIn {
+    from { opacity: 0; transform: scale(0.6); }
+    to   { opacity: 1; transform: scale(1); }
+  }
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateY(12px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* ── Responsive ── */
+  @media (max-width: 480px) {
+    .card { padding: 20px 16px; }
+    .hero { padding: 32px 20px 28px; }
+    .peserta-block { padding: 16px; }
+    .field-row { grid-template-columns: 1fr; }
+  }
+  @media (min-width: 768px) {
+    .page-wrap { padding: 48px 24px 80px; }
+  }
+  @media (orientation: landscape) and (max-height: 500px) {
+    .hero { padding: 24px 28px; }
+    .logo-ring { width: 60px; height: 60px; font-size: 26px; margin-bottom: 10px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="toast" id="toast">
+  <span id="toastIcon"></span>
+  <span id="toastMsg"></span>
+</div>
+
+<div class="page-wrap">
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="logo-ring">✋</div>
+    <div class="hero-label">GKJW Jemaat Mulyosari</div>
+    <h1>Retreat <span>Jemari</span> 2026</h1>
+    <p class="hero-sub">"Reconnect, Reflect, and Grow Together"</p>
+    <div class="hero-badges">
+      <div class="badge"><span>📅</span> 20–21 Juni 2026</div>
+      <div class="badge"><span>📍</span> Wisma Ciptaning Ati</div>
+      <div class="badge"><span>🤝</span> Intergenerasi</div>
+    </div>
+  </div>
+
+  <!-- Form card -->
+  <div class="card" id="formCard">
+    <h2 class="card-title">Form Pendaftaran</h2>
+    <p class="card-desc">Isi data di bawah ini. Satu keluarga bisa didaftarkan sekaligus dalam satu kali submit. Kolom bertanda <strong style="color:var(--gold)">*</strong> wajib diisi.</p>
+
+    <form id="regForm" novalidate>
+
+      <!-- Wilayah (sekali untuk semua) -->
+      <div class="section-label"><span>Wilayah</span></div>
+      <div class="field-group">
+        <label class="field-label" for="wilayah">Wilayah <span class="req">*</span></label>
+        <div class="select-wrap">
+          <select id="wilayah" name="wilayah">
+            <option value="">— Pilih Wilayah —</option>
+            <option value="Wilayah 1">Wilayah 1</option>
+            <option value="Wilayah 2">Wilayah 2</option>
+            <option value="Wilayah 3">Wilayah 3</option>
+            <option value="Tamu Luar">Tamu / Warga Luar</option>
+          </select>
+        </div>
+        <div class="field-error" id="errWilayah">Wilayah wajib dipilih.</div>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- Daftar peserta -->
+      <div class="section-label"><span>Data Peserta</span></div>
+      <div id="pesertaList"></div>
+
+      <!-- Tombol tambah -->
+      <button type="button" class="btn-add" id="btnAdd" onclick="tambahPeserta()">
+        <span style="font-size:18px">+</span> Tambah Anggota Keluarga
+      </button>
+
+      <div class="divider"></div>
+
+      <!-- Submit area -->
+      <div class="submit-area">
+        <div class="peserta-count-info" id="countInfo">
+          Mendaftarkan <strong id="countNum">1</strong> peserta
+        </div>
+        <button type="submit" class="btn-submit" id="btnSubmit">
+          <div class="spinner" id="spinner"></div>
+          <span id="btnText">✅ Daftarkan Semua</span>
+        </button>
+        <button type="button" class="btn-reset" onclick="resetForm()">
+          🔄 Reset / Isi Ulang
+        </button>
+      </div>
+
+    </form>
+  </div>
+
+  <!-- Success screen -->
+  <div class="card success-screen" id="successScreen">
+    <div class="success-icon">🙌</div>
+    <h3>Pendaftaran Berhasil!</h3>
+    <p>Data peserta berikut sudah tercatat. Panitia akan menghubungi Anda melalui WhatsApp untuk informasi lebih lanjut.</p>
+    <div class="success-names" id="successNames"></div>
+    <p style="font-size:13px;"><strong style="color:var(--navy)">Tuhan memberkati! 🙏</strong></p>
+    <button class="btn-daftar-lagi" onclick="daftarLagi()">+ Daftarkan Keluarga Lain</button>
+  </div>
+
+  <!-- CP -->
+  <div class="cp-card">
+    <div class="cp-title">📞 Pertanyaan? Hubungi CP Wilayah Anda</div>
+    <div class="cp-list">
+      <div class="cp-item">
+        <span class="cp-badge">Wil. 1</span>
+        <span class="cp-name">Ibu Siwi</span>
+        <span>·</span>
+        <a href="https://wa.me/6281357341377?text=Bu%20Siwi%2C%20mau%20tanya%20soal%20Retreat%20Jemari%202026" class="cp-phone">Klik disini untuk WA</a>
+      </div>
+      <div class="cp-item">
+        <span class="cp-badge">Wil. 2</span>
+        <span class="cp-name">Bp. Pratondo</span>
+        <span>·</span>
+        <a href="https://wa.me/6281217065272?text=Bp%20Pratondo%2C%20mau%20tanya%20soal%20Retreat%20Jemari%202026" class="cp-phone">Klik disini untuk WA</a>
+      </div>
+      <div class="cp-item">
+        <span class="cp-badge">Wil. 3</span>
+        <span class="cp-name">Ibu Widowati</span>
+        <span>·</span>
+        <a href="https://wa.me/6285785891040?text=Bu%20Widowati%2C%20mau%20tanya%20soal%20Retreat%20Jemari%202026" class="cp-phone">Klik disini untuk WA</a>
+      </div>
+    </div>
+  </div>
+
+  <p class="footer-note">
+    Data yang Anda isi disimpan secara aman dan hanya digunakan untuk keperluan panitia retreat.
+  </p>
+
+
+  <!-- Confirmation Modal -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-box">
+      <div class="modal-icon">🙏</div>
+      <div class="modal-title">Konfirmasi Pendaftaran</div>
+      <div class="modal-desc">
+        Anda akan mendaftarkan <strong id="modalCount"></strong> peserta:
+      </div>
+      <div class="modal-names" id="modalNames"></div>
+      <div class="modal-actions">
+        <button class="btn-modal-cancel" onclick="tutupModal()">✕ Batal</button>
+        <button class="btn-modal-ok" id="btnModalOk">✅ Ya, Daftarkan!</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyUcOkQo9mi02qZpQz2Llw7REZuy9PUFbtpjG64zC5xfQ6HwFFbbUkDNKrOcJLbEbxi/exec";
+
+  let pesertaCount = 0;
+
+  // ── Hitung generasi dari usia ──
+  function hitungGenerasi(usia) {
+    const u = parseInt(usia);
+    if (isNaN(u)) return "-";
+    if (u < 12)  return "Anak";
+    if (u < 18)  return "Remaja";
+    if (u < 30)  return "Pemuda";
+    if (u < 60)  return "Dewasa / Keluarga";
+    return "Adi Yuswa";
+  }
+
+  // ── Tambah blok peserta ──
+  function tambahPeserta() {
+    pesertaCount++;
+    const idx = pesertaCount;
+    const list = document.getElementById('pesertaList');
+
+    const block = document.createElement('div');
+    block.className = 'peserta-block';
+    block.id = `peserta-${idx}`;
+    block.innerHTML = `
+      <div class="peserta-header">
+        <div class="peserta-number">
+          <div class="peserta-num-badge">${idx}</div>
+          <div class="peserta-num-label">Peserta ${idx}</div>
+        </div>
+        ${idx > 1 ? `<button type="button" class="btn-remove" onclick="hapusPeserta(${idx})">✕ Hapus</button>` : ''}
+      </div>
+
+      <div class="field-group">
+        <label class="field-label" for="nama-${idx}">Nama Lengkap <span class="req">*</span></label>
+        <input type="text" id="nama-${idx}" placeholder="Nama lengkap peserta ${idx}" autocomplete="off">
+        <div class="field-error" id="errNama-${idx}">Nama lengkap wajib diisi.</div>
+      </div>
+
+      <div class="field-row">
+        <div class="field-group">
+          <label class="field-label">Jenis Kelamin <span class="req">*</span></label>
+          <div class="radio-group">
+            <div class="radio-btn">
+              <input type="radio" id="gL-${idx}" name="gender-${idx}" value="Laki-laki">
+              <label for="gL-${idx}">♂ L</label>
+            </div>
+            <div class="radio-btn">
+              <input type="radio" id="gP-${idx}" name="gender-${idx}" value="Perempuan">
+              <label for="gP-${idx}">♀ P</label>
+            </div>
+          </div>
+          <div class="field-error" id="errGender-${idx}">Wajib dipilih.</div>
+        </div>
+
+        <div class="field-group">
+          <label class="field-label" for="usia-${idx}">Usia <span class="req">*</span></label>
+          <input type="number" id="usia-${idx}" placeholder="Contoh: 35" min="1" max="120">
+          <div class="field-error" id="errUsia-${idx}">Usia tidak valid.</div>
+        </div>
+      </div>
+
+      <div class="field-group" style="margin-bottom:0">
+        <label class="checkbox-card" id="cbCard-${idx}" for="pendampingan-${idx}">
+          <input type="checkbox" id="pendampingan-${idx}"
+            onchange="document.getElementById('cbCard-${idx}').classList.toggle('checked', this.checked)">
+          <div>
+            <div class="cb-main">Perlu pendampingan dari keluarga</div>
+            <div class="cb-sub">Centang jika memerlukan pendampingan selama kegiatan (lansia, kondisi kesehatan tertentu, anak kecil, dll.)</div>
+          </div>
+        </label>
+      </div>
+    `;
+
+    list.appendChild(block);
+    updateCount();
+
+    // Live clear validation on input
+    document.getElementById(`nama-${idx}`).addEventListener('input', function() {
+      this.classList.remove('invalid');
+      document.getElementById(`errNama-${idx}`).style.display = 'none';
+    });
+    document.getElementById(`usia-${idx}`).addEventListener('input', function() {
+      this.classList.remove('invalid');
+      document.getElementById(`errUsia-${idx}`).style.display = 'none';
+    });
+  }
+
+  // ── Hapus peserta ──
+  function hapusPeserta(idx) {
+    const block = document.getElementById(`peserta-${idx}`);
+    block.style.animation = 'none';
+    block.style.opacity = '0';
+    block.style.transform = 'translateY(-8px)';
+    block.style.transition = 'all 0.2s';
+    setTimeout(() => {
+      block.remove();
+      updateCount();
+      renumberPeserta();
+    }, 200);
+  }
+
+  // ── Renumber badge setelah hapus ──
+  function renumberPeserta() {
+    const blocks = document.querySelectorAll('.peserta-block');
+    blocks.forEach((b, i) => {
+      const badge = b.querySelector('.peserta-num-badge');
+      const label = b.querySelector('.peserta-num-label');
+      if (badge) badge.textContent = i + 1;
+      if (label) label.textContent = `Peserta ${i + 1}`;
+    });
+    // Sinkronkan pesertaCount dengan jumlah blok yang ada
+    pesertaCount = blocks.length;
+  }
+
+  // ── Update counter ──
+  function updateCount() {
+    const n = document.querySelectorAll('.peserta-block').length;
+    document.getElementById('countNum').textContent = n;
+    document.getElementById('countInfo').innerHTML =
+      `Mendaftarkan <strong id="countNum">${n}</strong> peserta${n > 1 ? ' sekaligus' : ''}`;
+    document.getElementById('btnText').textContent =
+      n > 1 ? `✅ Daftarkan Semua (${n} Peserta)` : '✅ Daftarkan Saya';
+  }
+
+  // ── Validate semua peserta ──
+  function validateAll() {
+    let valid = true;
+
+    // Wilayah
+    const wil = document.getElementById('wilayah');
+    if (!wil.value) {
+      wil.classList.add('invalid');
+      document.getElementById('errWilayah').style.display = 'block';
+      valid = false;
+    } else {
+      wil.classList.remove('invalid');
+      document.getElementById('errWilayah').style.display = 'none';
+    }
+
+    // Tiap peserta
+    document.querySelectorAll('.peserta-block').forEach(block => {
+      const id = block.id.replace('peserta-', '');
+
+      const nama  = document.getElementById(`nama-${id}`);
+      const usia  = document.getElementById(`usia-${id}`);
+      const gender = document.querySelector(`input[name="gender-${id}"]:checked`);
+
+      if (!nama.value.trim()) {
+        nama.classList.add('invalid');
+        document.getElementById(`errNama-${id}`).style.display = 'block';
+        valid = false;
+      } else {
+        nama.classList.remove('invalid');
+        document.getElementById(`errNama-${id}`).style.display = 'none';
+      }
+
+      if (!gender) {
+        document.getElementById(`errGender-${id}`).style.display = 'block';
+        valid = false;
+      } else {
+        document.getElementById(`errGender-${id}`).style.display = 'none';
+      }
+
+      const u = parseInt(usia.value);
+      if (!usia.value || isNaN(u) || u < 1 || u > 120) {
+        usia.classList.add('invalid');
+        document.getElementById(`errUsia-${id}`).style.display = 'block';
+        valid = false;
+      } else {
+        usia.classList.remove('invalid');
+        document.getElementById(`errUsia-${id}`).style.display = 'none';
+      }
+    });
+
+    return valid;
+  }
+
+  // ── Kumpulkan data semua peserta ──
+  function collectData() {
+    const wilayah  = document.getElementById('wilayah').value;
+    const peserta  = [];
+
+    document.querySelectorAll('.peserta-block').forEach(block => {
+      const id     = block.id.replace('peserta-', '');
+      const nama   = document.getElementById(`nama-${id}`).value.trim();
+      const usia   = document.getElementById(`usia-${id}`).value;
+      const gender = document.querySelector(`input[name="gender-${id}"]:checked`);
+      const pendampingan = document.getElementById(`pendampingan-${id}`).checked ? 'Ya' : 'Tidak';
+
+      peserta.push({
+        namaLengkap:       nama,
+        wilayah:           wilayah,
+        jenisKelamin:      gender ? gender.value : '',
+        usia:              usia,
+        generasi:          hitungGenerasi(usia),
+        butuhPendampingan: pendampingan,
+      });
+    });
+
+    return peserta;
+  }
+
+  // ── Toast ──
+  function showToast(msg, type = 'success') {
+    const toast = document.getElementById('toast');
+    document.getElementById('toastMsg').textContent = msg;
+    document.getElementById('toastIcon').textContent = type === 'success' ? '✅' : '❌';
+    toast.className = `toast ${type} show`;
+    setTimeout(() => toast.classList.remove('show'), 3800);
+  }
+
+  // ── Submit — tampilkan modal konfirmasi dulu ──
+  document.getElementById('regForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    if (!validateAll()) {
+      showToast('Mohon lengkapi semua data yang wajib diisi.', 'error');
+      return;
+    }
+    tampilkanModal();
+  });
+
+  // ── Tampilkan modal ──
+  function tampilkanModal() {
+    const peserta = collectData();
+    document.getElementById('modalCount').textContent = peserta.length;
+    document.getElementById('modalNames').innerHTML = peserta.map(p =>
+      `<div class="modal-name-item">
+        <div class="mn-dot"></div>
+        <span>${p.namaLengkap}</span>
+        <span class="mn-gen">(${p.generasi})</span>
+      </div>`
+    ).join('');
+    document.getElementById('modalOverlay').classList.add('show');
+  }
+
+  // ── Tutup modal ──
+  function tutupModal() {
+    document.getElementById('modalOverlay').classList.remove('show');
+  }
+
+  // Tutup jika klik di luar modal box
+  document.getElementById('modalOverlay').addEventListener('click', function(e) {
+    if (e.target === this) tutupModal();
+  });
+
+  // ── Konfirmasi OK — kirim ke Google Sheets ──
+  document.getElementById('btnModalOk').addEventListener('click', async function() {
+    tutupModal();
+
+    const peserta = collectData();
+    const btn     = document.getElementById('btnSubmit');
+    const spinner = document.getElementById('spinner');
+    const btnText = document.getElementById('btnText');
+
+    btn.disabled = true;
+    spinner.style.display = 'block';
+    btnText.textContent = `Mengirim ${peserta.length} data...`;
+
+    try {
+      const resp = await fetch(APPS_SCRIPT_URL, {
+        method: 'POST',
+        body: JSON.stringify({ action: 'registerBatch', peserta }),
+      });
+      const result = await resp.json();
+
+      spinner.style.display = 'none';
+      btn.disabled = false;
+
+      if (result.success) {
+        const namesHtml = peserta.map(p =>
+          `<div class="sn-item"><div class="sn-dot"></div>${p.namaLengkap} <span style="color:var(--muted);font-weight:500;font-size:12px">(${p.generasi})</span></div>`
+        ).join('');
+        document.getElementById('successNames').innerHTML =
+          `<div class="sn-title">Peserta terdaftar</div>${namesHtml}`;
+
+        document.getElementById('formCard').style.display     = 'none';
+        document.getElementById('successScreen').style.display = 'block';
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        btnText.textContent = peserta.length > 1 ? `✅ Daftarkan Semua (${peserta.length} Peserta)` : '✅ Daftarkan Saya';
+        showToast('Gagal mengirim: ' + (result.error || 'Coba lagi.'), 'error');
+      }
+    } catch (err) {
+      spinner.style.display = 'none';
+      btn.disabled = false;
+      btnText.textContent = peserta.length > 1 ? `✅ Daftarkan Semua` : '✅ Daftarkan Saya';
+      showToast('Koneksi gagal. Periksa internet Anda.', 'error');
+    }
+  });
+
+  // ── Reset ──
+  function resetForm() {
+    document.getElementById('pesertaList').innerHTML = '';
+    document.getElementById('wilayah').value = '';
+    document.getElementById('wilayah').classList.remove('invalid');
+    document.getElementById('errWilayah').style.display = 'none';
+    pesertaCount = 0;
+    tambahPeserta();
+    showToast('Form telah direset.', 'success');
+  }
+
+  // ── Daftar keluarga lain ──
+  function daftarLagi() {
+    document.getElementById('successScreen').style.display = 'none';
+    document.getElementById('formCard').style.display      = 'block';
+    resetForm();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  // ── Init: langsung tampilkan 1 peserta ──
+  tambahPeserta();
+</script>
+</body>
+</html>
